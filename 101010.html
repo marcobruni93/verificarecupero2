@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>nome+cognome</title>
+    <link rel="stylesheet" href="verifica.css">
+</head>
+<body>
+<div class="container">
+<h1 class="punteggio"></h1>
+<p class="punteggio">struttura base + questa parte (3)</p>
+<audio src="siglasimpson.mp3" controls loop>
+</audio>
+<h3>sono un semplice h3</h3>
+<p>il punto qui sotto apre il sito del mazzotti</p>
+<ul>
+<a href="https://www.ittmazzotti.edu.it/" target="_blank"><li></li></a>
+</ul>
+</div>
+<div class="container" >
+<p class="punteggio">(3)</p>
+<ul>
+<li><h1>simpson1</h1></li>
+</ul>
+<img src="simpson1.png"   alt="immagine personaggi simpson">
+<ol>
+<li><h1>simpson2</h1></li>
+</ol>
+<img src="simpson2.png"   alt="immagine personaggi simpson">  
+
+ 
+</div>
+<div class="container">
+<p class="punteggio">(1)</p>
+<a href="1010101.html"><img src="freccia.png" alt="immagine freccia"></a>    
+    
+    
+</div>
+<script>   <!-- blocco tasto destro del mouse -->
+  function blocco_mousedx()
+   { return(false); }
+  document.oncontextmenu = blocco_mousedx;
+ <!-- blocco scorciatoie da tastiera -->
+ document.onkeydown = function(blocco_tasti) {
+  if(event.keyCode == 123) 
+{ return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
+{ return false; } 
+if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'S'.charCodeAt(0)) 
+{ return false; } 
+
+}
+ 
+
+    </script>
+</body>
+</html>
